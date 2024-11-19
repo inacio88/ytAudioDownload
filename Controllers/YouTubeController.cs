@@ -39,6 +39,7 @@ namespace YtAudio.Controllers
             }
             catch (Exception ex)
             {
+                System.Console.WriteLine(ex.Message);
                 // Retorna um erro caso algo tenha dado errado
                 return StatusCode(500, $"Erro ao tentar baixar o áudio: {ex.Message}");
             }
