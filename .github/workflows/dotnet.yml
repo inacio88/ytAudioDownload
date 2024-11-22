@@ -26,6 +26,8 @@ jobs:
       run: dotnet build --no-restore
     - name: Test
       run: dotnet test --no-build --verbosity normal
+    - name: Publish
+      run: dotnet publish -o ./app
 
     - name: Login to Docker Hub
       uses: mr-smithers-excellent/docker-build-push@v6
