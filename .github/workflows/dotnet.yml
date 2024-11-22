@@ -32,5 +32,5 @@ jobs:
       with:
         image: inacio88/ytaudio
         registry: docker.io
-        username: ${{ ytdockerhub.SECRET_YT_USERNAME }}
-        password: ${{ ytdockerhub.SECRET_YT_PASSWD }}
+        username: ${{ secrets.ytdockerhub.SECRET_YT_USERNAME }}
+        password: ${{ secrets.secrets.SECRET_YT_PASSWD }}
